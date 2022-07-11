@@ -23,25 +23,32 @@ html {
 }
 
 .pomodoro {
-	min-width: 90%;
+	min-width: 330px;
 	border-radius: 8px;
 	padding: 2.5rem;
 	background-color: white;
 	box-shadow: 0 0 10px 5px rgba(54, 24, 20, 0.5);
 }
 
+header {
+	width: 100%;
+	position: relative;
+}
+
 .title {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 3.5rem;
 	margin-bottom: 1rem;
 }
 
 .setting {
 	font-size: 2.5rem;
 	position: absolute;
+	right: 0;
+	top: 0.5rem;
 }
 
-.display-container {
+.timer-container {
 	font-family: 'Share Tech Mono', monospace;
 	font-size: 8rem;
 	text-align: center;
@@ -62,3 +69,16 @@ html {
 	margin: 0 1rem;
 	border: none;
 }
+
+@media screen and (max-width: 280px) {
+	.pomodoro {
+		min-width: 250px;
+	}
+}
+
+/* TODO: media query for tablets */
+/* @media screen and (max-height: 1180px) {
+	.pomodoro {
+		min-width: ;
+	}
+} */
