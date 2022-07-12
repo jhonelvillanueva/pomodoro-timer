@@ -1,4 +1,5 @@
 const ACTIONS = {
+	RUNNING: 'running',
 	START: 'start',
 	PAUSE: 'pause',
 	RESET: 'reset',
