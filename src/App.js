@@ -14,7 +14,7 @@ const App = () => {
 		dispatch,
 	] = useReducer(reducer, {
 		sessionStatus: true,
-		time: 5,
+		time: 1500,
 		start: false,
 		sessionTime: 1500,
 		breakTime: 300,
