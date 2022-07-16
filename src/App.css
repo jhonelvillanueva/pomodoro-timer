@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 *,
 *::before,
@@ -23,6 +24,20 @@ html {
 	left: 0;
 }
 
+.setting-container {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	padding: 2.5rem;
+	position: absolute;
+	min-width: 330px;
+	background-color: white;
+	border-radius: 8px;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .app-container {
 	width: 100vw;
 	height: 100vh;
@@ -34,6 +49,7 @@ html {
 }
 
 .pomodoro {
+	font-family: 'Roboto Mono', monospace;
 	min-width: 330px;
 	border-radius: 8px;
 	padding: 2.5rem;
@@ -52,7 +68,7 @@ header {
 	margin-bottom: 1rem;
 }
 
-.setting {
+.setting-icon {
 	font-size: 2.5rem;
 	position: absolute;
 	right: 0;
@@ -87,14 +103,8 @@ header {
 }
 
 @media screen and (max-width: 280px) {
-	.pomodoro {
+	.pomodoro,
+	.setting-container {
 		min-width: 250px;
 	}
 }
-
-/* TODO: media query for tablets */
-/* @media screen and (max-height: 1180px) {
-	.pomodoro {
-		min-width: ;
-	}
-} */

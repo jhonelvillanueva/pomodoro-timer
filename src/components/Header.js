@@ -5,7 +5,7 @@ import { faGear } from '@fortawesome/free-solid-svg-icons';
 const Header = ({ sessionStatus, handleSetting }) => {
 	return (
 		<header>
-			<button className='setting' onClick={handleSetting}>
+			<button className='setting-icon' onClick={handleSetting}>
 				<FontAwesomeIcon icon={faGear}></FontAwesomeIcon>
 			</button>
 			<h1 className='title'>{sessionStatus ? 'Session' : 'Break'}</h1>

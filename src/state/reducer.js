@@ -8,6 +8,7 @@ export const reducer = (state, action) => {
 					...state,
 					sessionStatus: !state.sessionStatus,
 					time: state.breakTime,
+					alert: true,
 				};
 			}
 
@@ -15,6 +16,7 @@ export const reducer = (state, action) => {
 				...state,
 				start: true,
 				time: state.time - 1,
+				alert: false,
 			};
 
 		case ACTIONS.PAUSE:
@@ -29,6 +31,13 @@ export const reducer = (state, action) => {
 				sessionStatus: true,
 				start: false,
 				time: state.sessionTime,
+			};
+
+		case ACTIONS.UPDATE:
+			return {
+				...state,
+				sessionTime: action.payload.sessionMinute * 60,
+				breakTime: action.payload.breakMinute * 60,
 			};
 
 		default:

@@ -4,7 +4,7 @@ const SECONDS_CONVERTER = 60;
 
 const Timer = ({ time }) => {
 	const minute = Math.floor(time / SECONDS_CONVERTER);
-	const seconds = Math.floor(time % 60);
+	const seconds = Math.ceil(time % 60);
 
 	const format = (time) => {
 		return time < 10 ? `0${time}` : time;
